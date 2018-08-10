@@ -12,16 +12,14 @@ namespace ServerAPI.Controllers
         public BooksController(BookStoreContext context)
         {
             _db = context;
-            if (context.Books.Count() == 0)
+            if (context.Books.Any()){ return;}
+            foreach (var book in DataSource.GetBooks())
             {
-                foreach (var book in DataSource.GetBooks())
-                {
-                    context.Books.Add(book);
-                    context.Presses.Add(book.Press);
-                }
-
-                context.SaveChanges();
+                context.Books.Add(book);
+                context.Presses.Add(book.Press);
             }
+
+            context.SaveChanges();
         }
 
         [EnableQuery]
