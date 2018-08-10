@@ -1,6 +1,10 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServerAPI", "ServerAPI\ServerAPI.csproj", "{BEE1A890-6CCF-46AD-9654-8D6FB6150101}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServerAPI", "src\ServerAPI\ServerAPI.csproj", "{BEE1A890-6CCF-46AD-9654-8D6FB6150101}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{361DC7BF-7A13-4717-80E9-CDA8B6142825}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{F1E46919-BD4E-43B8-B9B3-C8283CFDAB76}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -12,5 +16,8 @@ Global
 		{BEE1A890-6CCF-46AD-9654-8D6FB6150101}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BEE1A890-6CCF-46AD-9654-8D6FB6150101}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BEE1A890-6CCF-46AD-9654-8D6FB6150101}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BEE1A890-6CCF-46AD-9654-8D6FB6150101} = {361DC7BF-7A13-4717-80E9-CDA8B6142825}
 	EndGlobalSection
 EndGlobal

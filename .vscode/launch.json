@@ -10,9 +10,9 @@
             "request": "launch",
             "preLaunchTask": "build",
             // If you have changed target frameworks, make sure to update the program path.
-            "program": "${workspaceFolder}/ServerAPI/bin/Debug/netcoreapp2.1/ServerAPI.dll",
+            "program": "${workspaceFolder}/src/ServerAPI/bin/Debug/netcoreapp2.1/ServerAPI.dll",
             "args": [],
-            "cwd": "${workspaceFolder}/ServerAPI",
+            "cwd": "${workspaceFolder}/src/ServerAPI",
             "stopAtEntry": false,
             "internalConsoleOptions": "openOnSessionStart",
             "launchBrowser": {
